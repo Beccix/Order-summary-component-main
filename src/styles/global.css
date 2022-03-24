@@ -1,0 +1,174 @@
+:root{
+  --Pale-blue: hsl(225, 100%, 94%);
+  --Pale-blue-opacity: hsl(225, 100%, 94%, .3);
+  --Bright-blue: hsl(245, 75%, 52%);
+  --Very-pale-blue: hsl(225, 100%, 98%);
+  --Desaturated-blue: hsl(224, 23%, 55%);
+  --Dark-blue: hsl(223, 47%, 23%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  height: 100%;
+}
+
+body {
+  font-family: 'Red Hat Display', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: black;
+  -webkit-font-smoothing: antialiased;
+  height: 100vh;
+  width: 100vw;
+  padding: 4.4rem 1.5rem;
+}
+
+@media (max-width: 1080px) {
+  html {
+    font-size: 93.75%;
+  }
+}
+
+@media (max-width: 720px) {
+  html {
+    font-size: 87.5%;
+  }
+}
+
+.container {
+  border-radius: 1rem;
+  background-color: var(--Very-pale-blue);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 25.3rem;
+  height: 37.3rem;
+}
+
+.picture > img {
+  width: 100%;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 11rem;
+  text-align: center;
+}
+
+.text > h1 {
+  margin-bottom: 1.25rem;
+}
+
+.text > p {
+  color: var(--Desaturated-blue);
+  font-weight: 700;
+}
+
+.plan {
+  margin-bottom: 1.5rem;
+  height: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--Pale-blue-opacity);
+  border-radius: 1rem;
+  padding: 0 1.5rem;
+}
+
+.plan-text {
+  font-weight: 900;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.plan-text > div > h2 {
+  font-weight: 900;
+}
+
+.plan-text > div > p {
+  color: var(--Desaturated-blue);
+}
+
+.plan > div > img {
+  width: 3rem;
+  height: 3rem;
+  margin-right: 1rem;
+}
+
+.plan > button {
+  font-size: 1rem;
+  border: none;
+  background-color: transparent;
+}
+
+.plan > button > a {
+  font-weight: 900;
+  color: var(--Bright-blue);
+  background-color: transparent;
+}
+
+.plan-text > div {
+  height: 85%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly
+}
+
+.plan-text > div > h2 {
+  font-size: 1.25rem;
+}
+
+.plan-text > div > p {
+  font-size: 1.25rem;
+}
+
+.main , .footer {
+  padding: 0 1.5rem;
+}
+
+.footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer > button:first-child {
+  height: 3.2rem;
+  border-radius: .5rem;
+  background-color: var(--Bright-blue);
+  margin-bottom: 1rem;
+}
+
+.footer > button:first-child > a {
+  color: var(--Very-pale-blue);
+  font-weight: 900;
+  text-decoration: none;
+}
+
+.footer > button:last-child{
+  border: none;
+  background-color: transparent;
+  font-size: 1.2rem;
+}
+
+.footer > button:last-child > a{
+  text-decoration: none;
+  font-weight: 900;
+  color: var(--Desaturated-blue);
+}
+
+.attribution { 
+  position: absolute;
+  bottom: 0;
+}
